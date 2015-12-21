@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/bgcolor_header" >
+
+    <include
+        android:id="@+id/header_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        layout="@layout/header_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/login_layout_editor_bg"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/string_text_paddingleft"
+                android:text="退款原因:"
+                android:textColor="@color/edit_font_color"
+                android:textSize="@dimen/edit_font_size" />
+
+            <Spinner
+                android:id="@+id/spinner_sqthmem"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center" 
+                android:textSize="10sp" /><!-- android:entries="@array/tharray" -->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/login_layout_editor_bg"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:paddingLeft="@dimen/string_text_paddingleft"
+                android:text="退货说明:"
+                android:textColor="@color/edit_font_color"
+                android:textSize="@dimen/edit_font_size" />
+
+            <EditText
+                android:id="@+id/editText_address"
+                android:layout_width="215dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:background="@color/edit_bgcolor"
+                android:gravity="left|top"
+                android:hint="最多200字"
+                android:textColorHint="@color/edit_font_color"
+                android:textColor="#000"
+                android:textSize="@dimen/edit_font_size" >
+
+                <requestFocus />
+            </EditText>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/string_text_paddingleft"
+            android:paddingTop="10dp"
+            android:textColor="#000"
+            android:text="退货地址" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textColor="#000"
+            android:text="上海市静安区北京西路1701号1005室"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:textColor="#000"
+            android:text="乐途仕退货小组收"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:textColor="#000"
+            android:text="手机:13817638258"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:textColor="#000"
+            android:text="邮编:20040"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/layout_kdbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_layout_editor_bg"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingLeft="@dimen/string_text_paddingleft"
+                android:text="快递单号:"
+                android:textColor="@color/edit_font_color"
+                android:textSize="@dimen/edit_font_size" />
+
+            <EditText
+                android:id="@+id/edit_kdcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:singleLine="true"
+                android:textColor="@color/edit_font_color"
+                android:textSize="@dimen/edit_font_size" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_backsales"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:background="#000"
+            android:text="提交申请"
+            android:textColor="#FFF"
+            android:textSize="12sp" />
+    </LinearLayout>
+        
+</LinearLayout>

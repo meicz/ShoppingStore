@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="tharray">
+        <item>质量问题，货品存在瑕疵（划痕、胶水等）</item>
+        <item>穿着效果与想象不符</item>
+        <item>与描述不符</item>
+        <item>尺码不合适</item>
+        <item>未在指定日期内发货</item>
+        <item>气味太重</item>
+        <item>7天无理由退货</item> 
+    </string-array>
+</resources>

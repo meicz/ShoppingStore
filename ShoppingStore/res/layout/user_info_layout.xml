@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/bgcolor_header" >
+
+    <include
+        android:id="@+id/header_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        layout="@layout/header_bar" />
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="#000"
+        android:text="填写以下信息即可享受定制化服务" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" 
+        android:gravity="center"
+        android:textColor="#000"
+        android:text="性别生日不可修改请您谨慎填写" />
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:paddingRight="30dp"  
+	    android:paddingTop="40dp"
+	    android:orientation="vertical" > 
+	    
+	    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingBottom="10dp" >
+		
+		        <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="140dp"
+		            android:layout_height="wrap_content" 
+		            android:paddingRight="10dp"
+		            android:layout_weight="4"
+		            android:gravity="right"
+		            android:textColor="@color/commodity_font_color" 
+		            android:text="您的生日" />
+		
+		        <TextView
+		            android:id="@+id/editText_area11"
+		            android:layout_width="215dp"
+		            android:layout_height="@dimen/edit_height"
+		            android:background="@color/edit_bgcolor"  
+		            android:textColor="@color/commodity_font_color"
+		            android:textSize="@dimen/edit_font_size" 
+		            android:gravity="left|center"
+		            android:layout_weight="1" 
+		            android:ems="10" > 
+		            <requestFocus />
+		        </TextView>
+	      </LinearLayout>
+	      
+	    
+	    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingBottom="10dp" >
+		
+		        <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="140dp"
+		            android:layout_height="wrap_content" 
+		            android:paddingRight="10dp"
+		            android:layout_weight="4"
+		            android:gravity="right"
+		            android:textColor="@color/commodity_font_color" 
+		            android:text="昵称" />
+		
+		        <EditText
+		            android:id="@+id/editText_LinkPhone"
+		            android:layout_width="215dp"
+		            android:layout_height="@dimen/edit_height"
+		            android:background="@color/edit_bgcolor" 
+		            android:singleLine="true"  
+		            android:textColor="@color/commodity_font_color"
+		            android:textSize="@dimen/edit_font_size"
+		            android:layout_weight="1" 
+		            android:ems="10" > 
+		        </EditText>
+		  </LinearLayout>
+		  
+	    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingBottom="10dp" >
+		
+		        <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="140dp"
+		            android:layout_height="wrap_content"
+		            android:layout_gravity="center"
+		            android:layout_weight="4"
+		            android:gravity="right"
+		            android:paddingRight="10dp"
+		            android:text="您的性别"
+		            android:textColor="@color/commodity_font_color" />
+
+		        <RelativeLayout
+		            android:layout_width="215dp"
+		            android:layout_height="match_parent"
+		            android:layout_weight="1" >
+
+		            <com.shoppingstore.app.formcommon.utils.RadioButtonLayout
+		                android:id="@+id/textView3"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" >
+		                <ImageView
+							android:id="@+id/imageView_hdfk"
+						    android:layout_width="17dp"
+					        android:layout_height="17dp"
+						    android:src="@drawable/radio_select_state" 
+						    android:duplicateParentState="true"
+						    android:layout_alignParentLeft="true"
+						    android:layout_centerVertical="true" />
+				
+				        <TextView
+				            android:id="@+id/textView1"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_alignParentTop="true"
+				            android:layout_toRightOf="@+id/imageView_hdfk"
+				            android:textColor="@color/commodity_font_color"
+				            android:paddingLeft="5dp"
+				            android:text="男" />
+		            </com.shoppingstore.app.formcommon.utils.RadioButtonLayout>
+
+		            <com.shoppingstore.app.formcommon.utils.RadioButtonLayout
+		                android:id="@+id/textView4"
+		                android:layout_width="wrap_content"
+		                android:layout_height="wrap_content" 
+		                android:layout_toRightOf="@+id/textView3" 
+		                android:paddingLeft="20dp">
+				        <ImageView
+							android:id="@+id/imageView_hdfk"
+						    android:layout_width="17dp"
+					        android:layout_height="17dp"
+						    android:src="@drawable/radio_select_state" 
+						    android:duplicateParentState="true"
+						    android:layout_alignParentLeft="true"
+						    android:layout_centerVertical="true" />
+				
+				        <TextView
+				            android:id="@+id/textView1"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:layout_alignParentTop="true"
+				            android:layout_toRightOf="@+id/imageView_hdfk"
+				            android:textColor="@color/commodity_font_color"
+				            android:paddingLeft="5dp"
+				            android:text="女" />
+		            </com.shoppingstore.app.formcommon.utils.RadioButtonLayout>
+		            
+		        </RelativeLayout>
+		        
+		    </LinearLayout>
+		    
+	    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingBottom="10dp" >
+		    </LinearLayout>
+		    
+	    <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingBottom="10dp" >
+		
+		        <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="140dp"
+		            android:layout_height="wrap_content"
+		            android:paddingRight="10dp"
+		            android:layout_weight="4"
+		            android:gravity="right"
+		            android:textColor="@color/commodity_font_color" 
+		            android:text="手机号码" />
+		
+		        <EditText
+		            android:id="@+id/editText_postCode"
+		            android:layout_width="215dp"
+		            android:layout_height="@dimen/edit_height"
+		            android:background="@color/edit_bgcolor"
+		            android:singleLine="true"
+		            android:textColor="@color/commodity_font_color"
+		            android:textSize="@dimen/edit_font_size"
+		            android:layout_weight="1" 
+		            android:ems="10" > 
+		        </EditText>
+		    </LinearLayout>
+		    
+		    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:paddingBottom="10dp" >
+			
+			        <TextView
+			            android:id="@+id/textView1"
+			            android:layout_width="140dp"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center"
+			            android:layout_weight="4"
+			            android:gravity="right"
+			            android:paddingRight="10dp"
+			            android:text="短信验证"
+			            android:textColor="@color/commodity_font_color" />
+			
+				        <EditText
+				            android:id="@+id/editText_postCode"
+				            android:layout_width="115dp"
+				            android:layout_height="@dimen/edit_height"
+				            android:background="@color/edit_bgcolor"
+				            android:singleLine="true"
+				            android:textColor="@color/commodity_font_color"
+				            android:textSize="@dimen/edit_font_size"
+				            android:layout_weight="1" 
+				            android:layout_marginRight="10dp"
+				            android:ems="10" > 
+				        </EditText>
+
+				        <ImageView
+				            android:id="@+id/imageView1"
+				            android:layout_width="105dp"
+				            android:layout_height="@dimen/edit_height"
+				            android:layout_weight="1"
+				            android:src="@drawable/checkcode" />
+
+			    </LinearLayout>
+		    
+			    <LinearLayout
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:paddingBottom="10dp" >
+			
+			        <TextView
+			            android:id="@+id/textView1"
+			            android:layout_width="140dp"
+			            android:layout_height="wrap_content"
+			            android:paddingRight="10dp"
+			            android:layout_weight="4"
+			            android:gravity="right"
+			            android:textColor="@color/commodity_font_color" 
+			            android:text="邮箱地址" />
+			
+			        <EditText
+			            android:id="@+id/editText_postCode"
+			            android:layout_width="215dp"
+			            android:layout_height="@dimen/edit_height"
+			            android:background="@color/edit_bgcolor"
+			            android:singleLine="true"
+			            android:textColor="@color/commodity_font_color"
+			            android:textSize="@dimen/edit_font_size"
+			            android:layout_weight="1" 
+			            android:ems="10" > 
+			        </EditText>
+			    </LinearLayout>
+			    
+	     <LinearLayout
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:paddingBottom="10dp" >
+		
+		        <TextView
+		            android:id="@+id/textView1"
+		            android:layout_width="140dp"
+		            android:layout_height="wrap_content"
+		            android:paddingRight="10dp"
+		            android:layout_weight="4"
+		            android:gravity="right"
+		            android:text="" />
+		
+		        <Button
+		            android:id="@+id/button_addAddress"
+		            android:layout_width="107dp"
+		             android:layout_marginRight="107dp"
+		            android:layout_height="@dimen/edit_height"
+		            android:layout_weight="1"
+		            android:background="@color/login_but_bgcolor"
+		            android:text="提交"
+		            android:textColor="@color/edit_bgcolor"
+		            android:textSize="15sp" />
+		    </LinearLayout> 
+
+    </LinearLayout>
+ 
+</LinearLayout>

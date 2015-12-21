@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_bar" />
+
+    <!-- 主题图片 -->
+
+    <com.shoppingstore.app.formcommon.utils.ImageRoundView
+        android:id="@+id/imageRoundView"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp" 
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/include1" > 
+    </com.shoppingstore.app.formcommon.utils.ImageRoundView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:padding="5dp"
+        android:layout_below="@+id/imageRoundView" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >  
+			<ImageView
+	                android:id="@+id/imageView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true" 
+	                android:layout_weight="1"  
+	                android:scaleType="centerCrop" 
+	                android:src="@drawable/homecategory012x" />
+
+			<ImageView
+			    android:id="@+id/imageView_Men"
+			    android:layout_width="145dp"
+			    android:layout_height="90dp"
+			    android:layout_centerInParent="true"
+			    android:layout_marginLeft="20dp"
+			    android:layout_marginRight="20dp"
+			    android:layout_marginTop="84dp"
+			    android:background="@drawable/selector_homemen"
+			    android:scaleType="centerCrop" />
+<!-- android:background="@drawable/selector_homemen" -->
+
+		</RelativeLayout>
+		
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="1" >
+	        <ImageView
+	                android:id="@+id/imageView1"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentLeft="true"
+	                android:layout_alignParentRight="true"
+	                android:layout_alignParentTop="true"  
+	                android:layout_weight="1" 
+	                android:scaleType="centerCrop"
+	                android:src="@drawable/homecategory022x" />
+
+	        <ImageView
+	            android:id="@+id/imageView_Women"
+	            android:layout_width="145dp"
+	            android:layout_height="90dp"
+	            android:layout_centerInParent="true"
+	            android:layout_marginLeft="20dp"
+			    android:layout_marginRight="20dp"
+	            android:layout_marginTop="84dp"
+	            android:background="@drawable/selector_homewomen"
+	            android:scaleType="centerCrop" />
+
+        </RelativeLayout>
+    </LinearLayout>
+  
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="0dp" ><!-- 30dp -->
+        <com.shoppingstore.app.formcommon.utils.RadioButtonLayout
+	        android:layout_width="wrap_content"
+	        android:id="@+id/pay_zfb"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content" >
+	        <ImageView
+		        android:id="@+id/imageView_zfb"
+		        android:layout_width="17dp"
+	            android:layout_height="17dp"
+		        android:src="@drawable/radio_select_state" 
+		        android:duplicateParentState="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true" />
+	        
+	        <ImageView
+	                android:id="@+id/imageView3"
+	                android:layout_width="80dp"
+	                android:layout_height="40dp"
+	                android:layout_alignParentTop="true"
+	                android:layout_toRightOf="@+id/imageView_zfb"
+	                android:paddingLeft="5dp"
+	                android:src="@drawable/lottusseappui79" />
+	    </com.shoppingstore.app.formcommon.utils.RadioButtonLayout>
+	    
+        <com.shoppingstore.app.formcommon.utils.RadioButtonLayout
+	        android:layout_width="wrap_content"
+	        android:id="@+id/pay_wx"
+	        android:layout_weight="1"
+	        android:visibility="gone"
+	        android:layout_height="wrap_content" >
+	        <ImageView
+		        android:id="@+id/imageView_wx"
+		        android:layout_width="17dp"
+	            android:layout_height="17dp"
+		        android:src="@drawable/radio_select_state" 
+		        android:duplicateParentState="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true" />
+	        
+	        <ImageView
+	                android:id="@+id/imageView3"
+	                android:layout_width="80dp"
+	                android:layout_height="40dp"
+	                android:layout_alignParentTop="true"
+	                android:layout_toRightOf="@+id/imageView_wx"
+	                android:paddingLeft="5dp"
+	                android:src="@drawable/lottusseappui80" />
+	    </com.shoppingstore.app.formcommon.utils.RadioButtonLayout>
+	    
+        <com.shoppingstore.app.formcommon.utils.RadioButtonLayout
+	        android:layout_width="wrap_content"
+	        android:id="@+id/pay_zxzf"
+	        android:layout_weight="1"
+	        android:visibility="gone"
+	        android:layout_height="wrap_content" >
+	        <ImageView
+		        android:id="@+id/imageView_zxzf"
+		        android:layout_width="17dp"
+	            android:layout_height="17dp"
+		        android:src="@drawable/radio_select_state" 
+		        android:duplicateParentState="true"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true" />
+	        
+	        <ImageView
+	                android:id="@+id/imageView3"
+	                android:layout_width="80dp"
+	                android:layout_height="40dp"
+	                android:layout_alignParentTop="true"
+	                android:layout_toRightOf="@+id/imageView_zxzf"
+	                android:paddingLeft="5dp"
+	                android:src="@drawable/lottusseappui81" />
+	    </com.shoppingstore.app.formcommon.utils.RadioButtonLayout>
+   	</LinearLayout> 
+   	
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@drawable/xuxian_line" 
+        android:visibility="gone"
+        android:layout_marginBottom="5dp"/>
+
+    <com.shoppingstore.app.formcommon.utils.RadioButtonLayout
+        android:id="@+id/pay_hdfk"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_below="@+id/view1" >
+
+        <ImageView
+            android:id="@+id/imageView_hdfk"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:src="@drawable/radio_select_state" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView_hdfk"
+            android:paddingLeft="5dp"
+            android:text="货到付款"
+            android:textColor="@color/commodity_font_color" />
+ 
+    </com.shoppingstore.app.formcommon.utils.RadioButtonLayout>
+    
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--   
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+   <FrameLayout
+    android:id="@+id/activity_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" /> 
+    
+   <include   
+            android:layout_width="fill_parent"  
+            android:layout_height="wrap_content"  
+            android:layout_gravity="bottom" 
+            android:gravity="center_vertical"
+            android:orientation="horizontal" 
+            layout="@layout/tab_menu_layout" />  
+ 
+</FrameLayout>
+-->
+ 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF" >
+
+     <LinearLayout
+        android:id="@+id/activity_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0" 
+        android:orientation="vertical" /> 
+    <include
+        android:id="@+id/inclue_footer_menu_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        layout="@layout/footer_menu_layout"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" /> 
+</LinearLayout>

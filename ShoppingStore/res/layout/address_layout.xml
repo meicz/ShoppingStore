@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/text_margin_line"
+	android:layout_margin="5dp"
+	android:padding="10dp"
+    android:orientation="vertical" > 
+    <RelativeLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:background="#FFF" >
+                
+					<LinearLayout
+				        android:id="@+id/linearLayout1"
+				        android:layout_width="wrap_content"
+				        android:layout_height="wrap_content"
+				        android:layout_alignParentLeft="true"
+				        android:layout_alignParentRight="true" 
+				        android:orientation="vertical" >
+
+				        <LinearLayout
+				            android:layout_width="match_parent"
+				            android:layout_height="wrap_content" >
+
+				            <com.shoppingstore.app.formcommon.utils.RadioButtonLayout
+				                android:id="@+id/radiobutton_shdz"
+						        android:layout_width="wrap_content"
+						        android:layout_height="wrap_content"
+						        android:layout_alignParentLeft="true"
+						        android:layout_alignParentRight="true"
+						        android:layout_weight="1"
+						        android:layout_below="@+id/view1" >
+						        <ImageView
+									android:id="@+id/imageView_shdz"
+								    android:layout_width="17dp"
+							        android:layout_height="17dp"
+								    android:src="@drawable/radio_select_state" 
+								    android:duplicateParentState="true"
+								    android:layout_alignParentLeft="true"
+								    android:layout_centerVertical="true"
+								    android:visibility="gone" />
+						
+						        <TextView 
+						            android:layout_width="wrap_content"
+						            android:layout_height="wrap_content"
+						            android:layout_alignParentTop="true"
+						            android:layout_toRightOf="@+id/imageView_shdz"
+						            android:textColor="@color/commodity_font_color" 
+						            android:paddingLeft="5dp" 
+						            android:text="收货地址" />
+						 
+						    </com.shoppingstore.app.formcommon.utils.RadioButtonLayout>
+
+				            
+				            <ImageView
+				                android:id="@+id/imageView_address_edit"
+				                android:layout_width="40dp"
+				                android:layout_height="20dp"
+				                android:layout_gravity="center"  
+				                android:src="@drawable/lottusseappui69" />
+				            
+				            <ImageView
+						        android:id="@+id/imageView_address_delete"
+						        android:layout_width="40dp"
+				                android:layout_height="20dp"  
+				                android:layout_gravity="center"   
+						        android:src="@drawable/lottusseappui68"
+						        android:visibility="gone" />
+
+				        </LinearLayout>
+
+				        <com.shoppingstore.app.formcommon.utils.DashedLineView
+					        android:layout_width="match_parent"
+					        android:layout_height="1dp"
+					        android:layout_alignParentLeft="true"
+					        android:layout_below="@+id/include_footer_edit"  
+					        android:layout_marginTop="5dp"
+					        android:layout_marginBottom="5dp" />
+
+				        <TextView
+				            android:id="@+id/textView_phone"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content"
+				            android:paddingBottom="5dp"
+				            android:textColor="@color/commodity_font_color" 
+				            android:text="" />
+				        <TextView
+				            android:id="@+id/textView_address"
+				            android:layout_width="wrap_content"
+				            android:layout_height="wrap_content" 
+				            android:textColor="@color/commodity_font_color" 
+				            android:text="" />
+
+				    </LinearLayout> 
+
+				</RelativeLayout> 
+</LinearLayout>

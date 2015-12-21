@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:radiobuttonex="http://schemas.android.com/apk/res/com.shoppingstore.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"  >
+    <View
+	     android:layout_width="match_parent"
+	     android:layout_height="1dp"
+	     android:layout_alignParentLeft="true"
+	     android:layout_below="@+id/include_footer_edit"
+	     android:background="@color/footer_bootom_line_color" />
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" 
+	    android:orientation="vertical" >
+	    <RadioGroup  
+	            android:id="@+id/tab_menu"  
+	            android:layout_width="fill_parent"  
+	            android:layout_height="45dp"  
+	            android:padding="5dp"
+	            android:layout_gravity="bottom"
+	            android:background="@color/index_menu_bgcolor"
+	            android:gravity="center_vertical" 
+	            android:orientation="horizontal" >  
+	            
+	            <com.shoppingstore.app.formcommon.utils.RadioButtonEx  
+	                android:id="@+id/home"  
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:background="@null"
+	                android:gravity="center_horizontal"  
+	                android:button="@null"
+	                style="@style/TabMenuText" 
+	                android:text="首页" 
+	                radiobuttonex:drawableTop="@drawable/tab_home"  
+	                radiobuttonex:drawableSize="20dp" />   
+	                
+	            <com.shoppingstore.app.formcommon.utils.RadioButtonEx  
+	                android:id="@+id/activity"  
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:background="@null"
+	                android:gravity="center_horizontal"  
+	                android:button="@null"
+	                style="@style/TabMenuText"
+	                android:text="活动"
+	                radiobuttonex:drawableTop="@drawable/tab_activity"  
+	                radiobuttonex:drawableSize="20dp" />   
+	
+	   	 		<com.shoppingstore.app.formcommon.utils.RadioButtonEx  
+	                android:id="@+id/favorite"  
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:background="@null"
+	                android:gravity="center_horizontal"   
+	                android:button="@null"
+	                style="@style/TabMenuText"
+	                android:text="收藏"
+	                radiobuttonex:drawableTop="@drawable/tab_favorite"  
+	                radiobuttonex:drawableSize="20dp" />  
+	                
+	    		<com.shoppingstore.app.formcommon.utils.RadioButtonEx  
+	                android:id="@+id/brand"  
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:background="@null"
+	                android:gravity="center_horizontal"   
+	                android:button="@null"
+	                style="@style/TabMenuText"
+	                android:text="品牌文化"
+	                radiobuttonex:drawableTop="@drawable/tab_brand"  
+	                radiobuttonex:drawableSize="20dp" />  
+	                
+	    		<com.shoppingstore.app.formcommon.utils.RadioButtonEx  
+	                android:id="@+id/user"  
+	                android:layout_width="0dp"
+	                android:layout_height="wrap_content"
+	                android:layout_weight="1"
+	                android:background="@null"
+	                android:gravity="center_horizontal"    
+	                android:button="@null"
+	                style="@style/TabMenuText"
+	                android:text="会员"
+	                radiobuttonex:drawableTop="@drawable/tab_user"  
+	                radiobuttonex:drawableSize="20dp" />  
+	              
+	    </RadioGroup>
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:radiobuttonex="http://schemas.android.com/apk/res/com.shoppingstore.app"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/spdetail_footer_bgcolor" 
+    android:orientation="vertical"  >
+    <View
+	     android:layout_width="match_parent"
+	     android:layout_height="1dp"
+	     android:layout_alignParentLeft="true"
+	     android:layout_below="@+id/include_footer_edit"
+	     android:background="@color/footer_bootom_line_color" />
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="53dp" 
+	    android:padding="5dp"
+	    android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_xyqd"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"  
+            android:background="@drawable/spdetail_text_margin_line"
+            android:textColor="@color/order_font_bgcolor"
+            android:textSize="@dimen/spdetail_buttonfont_size" 
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="心愿清单" />
+        
+         <Button
+            android:id="@+id/button_addshopcart"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"  
+            android:background="@color/login_but_bgcolor"
+            android:textColor="@color/edit_bgcolor"
+            android:textSize="@dimen/spdetail_buttonfont_size"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:text="加入购物袋" />
+ 
+        <Button
+            android:id="@+id/button_fx"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"  
+            android:background="@drawable/spdetail_text_margin_line"
+            android:textColor="@color/order_font_bgcolor"
+            android:textSize="@dimen/spdetail_buttonfont_size"
+            android:layout_weight="1"
+            android:text="分享" />
+
+	</LinearLayout>
+</LinearLayout>

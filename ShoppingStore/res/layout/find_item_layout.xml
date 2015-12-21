@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical"
+    android:background="@color/bgcolor_header" >
+    
+    <com.shoppingstore.app.formcommon.utils.RadioButtonLayout
+        android:id="@+id/layout_bar"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/edit_height" 
+		android:background="@drawable/find_item_select_bg"
+		android:paddingLeft="5dp"
+		android:paddingRight="20dp" >  
+
+        <ImageView 
+            android:id="@+id/imageView1"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:src="@drawable/find_select_item"  />
+
+        <TextView
+            android:id="@+id/textView_name"
+			android:layout_width="wrap_content"
+			android:layout_height="@dimen/header_height" 
+			android:layout_toRightOf="@+id/imageView1"
+	        android:paddingLeft="5dp"
+			android:gravity="center|left"  
+			android:textColor="#000"
+			android:text="" /> 
+ 
+    </com.shoppingstore.app.formcommon.utils.RadioButtonLayout>
+    
+</LinearLayout>

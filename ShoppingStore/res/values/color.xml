@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="login_footer_bgcolor">#2E2A25</color><!--登录页脚背景色 -->
+    <color name="login_footer_font_color">#FFF</color><!--登录页脚字体颜色 -->
+    <color name="login_footer_line">#958C83</color><!--登录页脚，中间分割线 -->
+    <color name="reg_head_close_line">#FFF</color><!--注册页头，关闭线 -->
+    
+    <color name="edit_bgcolor">#FFF</color><!--编辑框背景色 -->
+    <color name="edit_font_color">#706259</color><!--编辑框字体颜色 -->
+    
+    <color name="login_but_bgcolor">#FF5000</color>
+    
+    <color name="index_menu_bgcolor">#DCD8D5</color>
+    <color name="bgcolor_header">#DBD9D6</color> <!-- 页头背景色 -->
+    <color name="header_top_line_color">#B7AEA5</color> <!-- 页头底部分割线 -->
+    <color name="header_text_margin_line_color">#D8CEC4</color> <!-- 页头文本框边框颜色 -->
+    <color name="header_text_bg_color">#FFF</color> <!-- 页头文本框背景颜色 -->
+    
+    <color name="footer_bootom_line_color">#C3BCB4</color> <!-- 页脚顶部分割线 -->  
+    
+    <color name="spdetail_footer_bgcolor">#E9E9E9</color> <!-- 商品详情页脚背景色 -->  
+    <color name="spdetail_footer_shopcart_bgcolor">#FF5000</color> <!-- 商品详情页脚加入购物车背景色 -->  
+    <color name="spdetail_footer_margin_line_color">#CAC1BA</color> <!-- 商品详情页脚按钮边框色 -->
+    <color name="spdetail_footer_other_bgcolor">#FFF</color> <!-- 商品详情页脚其它按钮的背景色 -->
+    
+    <color name="commodity_font_color">#000</color> <!-- 商品详情字体颜色 -->
+    
+    <color name="province_line_border">#C7C7C7</color> 
+    <color name="user_bgcolor">#EAE6E5</color> <!-- 会员背景色 -->
+    <color name="user_line_color">#B7ADA4</color><!--会员中间分割线 -->
+    <color name="userf_text_font_bgcolor">#000</color><!--会员字体颜色 -->
+   	<color name="order_font_bgcolor">#726157</color><!--订单字体颜色 --> 
+    
+</resources>

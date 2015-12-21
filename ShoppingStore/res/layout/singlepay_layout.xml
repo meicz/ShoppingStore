@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/yy"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="商品已添加到购物袋" />
+
+	<View
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:layout_alignParentLeft="true"
+	    android:layout_marginBottom="10dp"
+	    android:layout_marginTop="10dp"
+	    android:background="@color/header_top_line_color" />
+
+	<ImageView
+	    android:id="@+id/imageView_singlepay"
+	    android:layout_width="100dp"
+	    android:layout_height="100dp"
+	    android:layout_gravity="center"  />
+
+	<Button
+	    android:id="@+id/but_sing_pay" 
+	    android:layout_width="80dp"
+	    android:layout_height="@dimen/edit_height"
+        android:background="@color/login_but_bgcolor"
+        android:textColor="@color/edit_bgcolor"
+        android:textSize="15sp" 
+        android:layout_gravity="center"
+	    android:text="立即支付" />
+
+</LinearLayout>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbg2x" >
+
+    <fragment
+	    android:id="@+id/include_footer_skip"
+	    android:layout_width="wrap_content"
+	    android:layout_height="@dimen/login_footer_height"
+	    android:layout_alignParentBottom="true"
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentRight="true"
+	    class="com.shoppingstore.app.formcommon.login.LoginSkipFragment" />
+    
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/include_footer_edit"
+        android:background="@color/login_footer_line" />
+
+    <include
+        android:id="@+id/include_footer_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/login_footer_height"
+        android:layout_above="@+id/include_footer_skip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true" 
+        layout="@layout/login_reg_footer_layout" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/include_footer_edit"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp" 
+        android:layout_marginTop="122dp">
+
+        <ImageView 
+            android:id="@+id/imageview_log"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/image_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/commonlogo2x" />
+
+        <EditText
+            android:id="@+id/edit_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/imageview_log"
+            android:background="@color/edit_bgcolor"
+            android:ems="10"
+            android:singleLine="true"  
+            android:textColor="@color/edit_font_color"
+            android:textSize="@dimen/edit_font_size"
+            android:paddingLeft="@dimen/edit_paddingleft"
+            android:paddingRight="@dimen/string_text_paddingleft"
+            android:hint="请输入用户名"
+            android:textColorHint="@color/edit_font_color" >
+ 
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignLeft="@+id/edit_userName"
+            android:layout_alignTop="@+id/edit_userName"
+            android:layout_alignBaseline="@+id/edit_userName" 
+            android:layout_alignParentLeft="true" 
+            android:textColor="@color/edit_font_color"
+            android:textSize="@dimen/edit_font_size"
+            android:paddingLeft="@dimen/string_text_paddingleft"
+            android:text="用户名:" />
+        
+        <EditText
+            android:id="@+id/edit_userPass"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/edit_height"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edit_userName"
+            android:background="@color/edit_bgcolor"
+            android:ems="10"
+            android:singleLine="true"  
+            android:textColor="@color/edit_font_color"
+            android:textSize="@dimen/edit_font_size"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="@dimen/edit_paddingleft" 
+            android:paddingRight="@dimen/string_text_paddingleft"
+            android:hint="请输入密码"
+            android:inputType="textPassword" 
+            android:textColorHint="@color/edit_font_color" >
+ 
+        </EditText>
+
+        <TextView
+            android:id="@+id/textView_userPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:layout_alignLeft="@+id/edit_userPass"
+            android:layout_alignTop="@+id/edit_userPass"
+            android:layout_alignBaseline="@+id/edit_userPass" 
+            android:layout_alignParentLeft="true" 
+            android:textColor="@color/edit_font_color"
+            android:textSize="@dimen/edit_font_size"
+            android:paddingLeft="@dimen/string_text_paddingleft"
+            android:text="密码:" />
+
+        <Button
+            android:id="@+id/butLogin"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height" 
+            android:layout_below="@+id/edit_userPass"
+            android:layout_marginTop="15dp"
+            android:background="@color/login_but_bgcolor"
+            android:textColor="@color/edit_bgcolor"
+            android:textSize="15sp"
+            android:text="登录" />
+        
+        <TextView
+            android:id="@+id/textView_Wjmm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/butLogin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="忘记密码?"
+            android:textColor="@color/edit_bgcolor" />
+         
+    </RelativeLayout>
+
+</RelativeLayout>

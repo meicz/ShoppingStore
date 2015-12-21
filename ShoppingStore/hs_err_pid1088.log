@@ -1,0 +1,119 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (434C41535326494C453041525345520E4350500AB6), pid=1088, tid=9484
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0-b105 mixed mode)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x01f59000):  JavaThread "Unknown thread" [_thread_in_vm, id=9484]
+
+Stack: [0x00340000,0x00390000)
+[error occurred during error reporting, step 110, id 0xc00000fd]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [javaw.exe+0xc07c]
+C  [javaw.exe+0x7d35]
+C  [KERNEL32.DLL+0x17c04]
+C  [ntdll.dll+0x5ad1f]
+C  [ntdll.dll+0x5acea]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+VM state:not at safepoint (not fully initilizated)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 960K, used 0K [0x03f60000, 0x04060000, 0x04440000)
+  eden space 896K,   0% used [0x03f60000, 0x03f60000, 0x04040000)
+  from space 64K,   0% used [0x04040000, 0x04040000, 0x04050000)
+  to   space 64K,   0% used [0x04050000, 0x04050000, 0x04060000)
+ tenured generation   total 4096K, used 0K [0x04440000, 0x04840000, 0x07f60000)
+   the space 4096K,   0% used [0x04440000, 0x04440000, 0x04440200, 0x04840000)
+ compacting perm gen  total 12288K, used 103K [0x07f60000, 0x08b60000, 0x0bf60000)
+   the space 12288K,   0% used [0x07f60000, 0x07f79e40, 0x07f7a000, 0x08b60000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00423000 	C:\Program Files (x86)\Java\jre1.6.0\bin\javaw.exe
+0x77c80000 - 0x77dee000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x75d80000 - 0x75ec0000 	C:\WINDOWS\SYSTEM32\KERNEL32.DLL
+0x756c0000 - 0x75797000 	C:\WINDOWS\SYSTEM32\KERNELBASE.dll
+0x71260000 - 0x71300000 	C:\WINDOWS\system32\apphelp.dll
+0x65110000 - 0x65376000 	C:\WINDOWS\AppPatch\AcGenral.DLL
+0x75990000 - 0x75a53000 	C:\WINDOWS\SYSTEM32\msvcrt.dll
+0x776b0000 - 0x776f1000 	C:\WINDOWS\SYSTEM32\sechost.dll
+0x75470000 - 0x7548e000 	C:\WINDOWS\SYSTEM32\SspiCli.dll
+0x75f80000 - 0x75fc5000 	C:\WINDOWS\SYSTEM32\SHLWAPI.dll
+0x6b0c0000 - 0x6b1ad000 	C:\WINDOWS\SYSTEM32\UxTheme.dll
+0x757a0000 - 0x758f3000 	C:\WINDOWS\SYSTEM32\USER32.dll
+0x75c30000 - 0x75d3f000 	C:\WINDOWS\SYSTEM32\GDI32.dll
+0x74ee0000 - 0x74f03000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x74de0000 - 0x74df3000 	C:\WINDOWS\SYSTEM32\samcli.dll
+0x75a60000 - 0x75b89000 	C:\WINDOWS\SYSTEM32\ole32.dll
+0x77700000 - 0x77795000 	C:\WINDOWS\SYSTEM32\OLEAUT32.dll
+0x68330000 - 0x68347000 	C:\WINDOWS\SYSTEM32\MSACM32.dll
+0x753f0000 - 0x753f8000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x762d0000 - 0x7758c000 	C:\WINDOWS\SYSTEM32\SHELL32.dll
+0x753c0000 - 0x753db000 	C:\WINDOWS\SYSTEM32\USERENV.dll
+0x6bb90000 - 0x6bbaa000 	C:\WINDOWS\SYSTEM32\dwmapi.dll
+0x72010000 - 0x7215b000 	C:\WINDOWS\SYSTEM32\urlmon.dll
+0x77800000 - 0x7787c000 	C:\WINDOWS\SYSTEM32\ADVAPI32.dll
+0x6d550000 - 0x6d5b5000 	C:\WINDOWS\SYSTEM32\WINSPOOL.DRV
+0x6bd30000 - 0x6bd46000 	C:\WINDOWS\SYSTEM32\MPR.dll
+0x75ec0000 - 0x75f7a000 	C:\WINDOWS\SYSTEM32\RPCRT4.dll
+0x75460000 - 0x7546a000 	C:\WINDOWS\SYSTEM32\CRYPTBASE.dll
+0x77880000 - 0x779fd000 	C:\WINDOWS\SYSTEM32\combase.dll
+0x74e40000 - 0x74e63000 	C:\WINDOWS\SYSTEM32\WINMMBASE.dll
+0x753b0000 - 0x753bf000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x722f0000 - 0x72522000 	C:\WINDOWS\SYSTEM32\iertutil.dll
+0x72740000 - 0x72933000 	C:\WINDOWS\SYSTEM32\WININET.dll
+0x75400000 - 0x75454000 	C:\WINDOWS\SYSTEM32\bcryptPrimitives.dll
+0x77a00000 - 0x77a3c000 	C:\WINDOWS\SYSTEM32\cfgmgr32.dll
+0x74e10000 - 0x74e31000 	C:\WINDOWS\SYSTEM32\DEVOBJ.dll
+0x751c0000 - 0x7524b000 	C:\WINDOWS\SYSTEM32\SHCORE.DLL
+0x75900000 - 0x75927000 	C:\WINDOWS\system32\IMM32.DLL
+0x77590000 - 0x776a2000 	C:\WINDOWS\SYSTEM32\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Program Files (x86)\Java\jre1.6.0\bin\msvcr71.dll
+0x6d7c0000 - 0x6da07000 	C:\Program Files (x86)\Java\jre1.6.0\bin\client\jvm.dll
+0x6d310000 - 0x6d318000 	C:\Program Files (x86)\Java\jre1.6.0\bin\hpi.dll
+0x76090000 - 0x76096000 	C:\WINDOWS\SYSTEM32\PSAPI.DLL
+0x6d770000 - 0x6d77c000 	C:\Program Files (x86)\Java\jre1.6.0\bin\verify.dll
+0x6d3b0000 - 0x6d3cf000 	C:\Program Files (x86)\Java\jre1.6.0\bin\java.dll
+0x6d7b0000 - 0x6d7bf000 	C:\Program Files (x86)\Java\jre1.6.0\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:C:\新建文件夹\android\adt-bundle-windows-x86-20131030\adt-bundle-windows-x86-20131030\sdk\platforms\android-19\android.jar
+java_command: com.shoppingstore.app.internal.test
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\java732\jdk1.7.0_45
+JRE_HOME=C:\Program Files (x86)\java732\jdk1.7.0_45\jre
+CLASSPATH=.C:\Program Files (x86)\java732\jdk1.7.0_45\lib;C:\Program Files (x86)\java732\jdk1.7.0_45\lib\tools.jar
+USERNAME=mei
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.2 Build 9200 
+
+CPU:total 4 family 6, cmov, cx8, fxsr, mmx, sse, sse2
+
+Memory: 4k page, physical 4031976k(849184k free), swap 4194303k(1149924k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.6.0-b105) for windows-x86, built on Nov 29 2006 00:48:48 by "java_re" with unknown MS VC++:1310
+

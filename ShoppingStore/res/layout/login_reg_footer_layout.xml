@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_footer_bgcolor"
+     >
+
+    <TextView
+        android:id="@+id/textview_reg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="@string/login_footer_reg_string"
+        android:textColor="@color/login_footer_font_color"
+        android:textSize="@dimen/login_footer_font_size" />
+
+    <ImageView
+        android:id="@+id/imageview_reg"
+        android:layout_width="@dimen/login_footer_img_wh"
+        android:layout_height="@dimen/login_footer_img_wh"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/login_footer_margin_right"
+        android:src="@drawable/commonplus2x" />
+
+</RelativeLayout>

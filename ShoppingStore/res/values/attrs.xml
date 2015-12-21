@@ -1,0 +1,13 @@
+<resources>
+	<declare-styleable name="RadioButtonEx">
+	    <attr name="drawableSize" format="dimension"/>
+	    <attr name="drawableTop" format="string"/>
+	    <attr name="drawableBottom" format="string"/>
+	    <attr name="drawableRight" format="string"/>
+	    <attr name="drawableLeft" format="string"/> 
+	</declare-styleable>
+	
+	<declare-styleable name="RadioButtonLayout">
+        <attr name="selectstate" format="boolean" />
+    </declare-styleable>
+</resources>

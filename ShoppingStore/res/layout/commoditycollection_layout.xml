@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_menubar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_bar" />
+
+    <LinearLayout
+        android:id="@+id/header_findbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:background="@color/bgcolor_header"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"  
+            android:layout_weight="1" >
+            <EditText
+	            android:id="@+id/edit_findtext"
+	            android:layout_width="wrap_content"
+	            android:layout_height="@dimen/edit_height"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageview_log"
+	        	android:background="@drawable/text_margin_line_radiu"
+	            android:ems="10"
+	            android:singleLine="true"  
+	            android:textColor="@color/edit_font_color"
+	            android:textSize="@dimen/edit_font_size"
+	            android:paddingLeft="30dp"
+	            android:paddingRight="@dimen/string_text_paddingleft"
+	            android:hint="Search in mem"
+	            android:textColorHint="@color/edit_font_color" /> 
+
+	         <ImageView 
+	             android:layout_width="30dp"
+	             android:layout_height="30dp"
+	             android:padding="5dp"
+	             android:layout_centerVertical="true"
+	             android:src="@drawable/search" />
+	          
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView_com_type_xz"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/selector_commodity_men_shoe_type" />
+
+            <ImageView
+                android:id="@+id/imageView_com_type_ps"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/selector_commodity_men_ps_type" />
+
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/imageView_com_type_py"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/selector_commodity_men_yf_type" />
+
+            <ImageView
+                android:id="@+id/imageView_com_type_bb"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="5dp"
+                android:scaleType="centerCrop"
+                android:background="@drawable/selector_commodity_men_box_type" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+ 
+</LinearLayout>

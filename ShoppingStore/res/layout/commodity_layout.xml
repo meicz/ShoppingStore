@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <ImageView
+	        android:id="@+id/imageView_imageUrl"
+	        android:layout_width="145dp"
+	        android:layout_height="145dp" 
+	        android:adjustViewBounds="true"  
+	        android:background="@drawable/commoditybg" />
+        
+        <ImageView
+	        android:id="@+id/imageView_tj"
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:layout_alignParentTop="true"
+	        android:visibility="gone"
+	        android:layout_alignRight="@+id/imageView_imageUrl"
+	        android:src="@drawable/recommand2x" />
+        
+        <ImageView
+	        android:id="@+id/imageView_ysq"
+	        android:layout_width="60dp"
+	        android:layout_height="60dp"
+	        android:layout_alignParentTop="true"
+	        android:visibility="gone"
+	        android:layout_alignRight="@+id/imageView_imageUrl"
+	        android:src="@drawable/soldout2x" />
+    </RelativeLayout> 
+
+    <TextView
+        android:id="@+id/textView_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="描述" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#FF5102"
+            android:text="1888" />
+
+        <TextView
+            android:id="@+id/textView_tagPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView_price"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000"
+            android:text="100" />
+
+    </RelativeLayout>
+
+</LinearLayout>

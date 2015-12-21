@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:radiobuttonlayout="http://schemas.android.com/apk/res/com.shoppingstore.app">
+
+    <item android:drawable="@drawable/find_text_focus_color" radiobuttonlayout:selectstate="true"></item>  
+    <item android:drawable="@drawable/find_text_nofocus_color"></item>
+
+</selector>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical" 
+    android:background="@color/bgcolor_header" >
+
+    <include
+        android:id="@+id/address_list_header_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" 
+        layout="@layout/header_bar" /> 
+     
+    <LinearLayout
+        android:id="@+id/my_shopcart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:padding="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:paddingTop="2dp"
+            android:orientation="vertical" >
+
+            <GridView
+                android:id="@+id/gridView_addressitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:horizontalSpacing="12dp"
+                android:numColumns="1" 
+                android:layout_weight="1" 
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" >
+
+		 		</GridView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:orientation="vertical"
+                android:paddingTop="12dp" >
+
+                <Button
+                    android:id="@+id/button_add"
+                    android:layout_width="150dp"
+                    android:layout_height="@dimen/edit_height"
+                    android:layout_gravity="center"
+                    android:background="@color/login_but_bgcolor"
+                    android:text="添加新地址"
+                    android:textColor="@color/edit_bgcolor"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

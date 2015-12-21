@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:radiobuttonlayout="http://schemas.android.com/apk/res/com.shoppingstore.app">    
+    <item android:drawable="@drawable/lottusseappui40" radiobuttonlayout:selectstate="true"></item>  
+    <item android:drawable="@drawable/lottusseappui41"></item>
+</selector>
